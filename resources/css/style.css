@@ -28,6 +28,10 @@ header img {
 }
 */
 
+.mobile {
+  display: none;
+}
+
 .first {
   color: hsl(217,1,34);
   font-weight: bold;
