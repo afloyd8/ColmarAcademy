@@ -69,6 +69,7 @@ nav a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: whitesmoke;
   /*padding-top: 24px;*/
   /*padding-left: 1370px;*/
 }
@@ -78,14 +79,26 @@ nav a {
 
 .banner {
   background-color: gray;
+  padding-top: 32px;
+  display: flex;
+
 }
 
-.banner .container { /* NOTE: This puts the gray bar on top of the picture */
+.banner .container { /* NOTE: This puts the gray bar on top of the picture, and the call to margin enables the padding on the left side of the image in the next css call */
   padding-top: 32px;
+  margin: 0;
 }
 
 .banner img {
   width: 60%;
   padding: 32px 24px;
   padding-top: 32px;
+  justify-content: space-between;
+}
+
+.learn h1 {
+  width: 60%;
+  margin: 1.5rem 0rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
