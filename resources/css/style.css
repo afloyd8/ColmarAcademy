@@ -116,3 +116,39 @@ nav a {
 .button a {
   text-decoration: none;
 }
+
+/* Information Section */
+
+.banner2 {
+  background-color: whitesmoke;
+  padding-top: 32px;
+}
+
+.banner2 img {
+  width: 60%;
+  padding: 0px 24px;
+  align-self: center; /* NOTE: This line prevents the picture from stretching */
+}
+
+.banner2 h1 {
+  color: hsl(0,0,50);
+  font-size: 2rem;
+  padding-left: 24px;
+  padding-top: 32px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.banner2 h3 {
+  width: 60%;
+  padding-top: 32px;
+  font-family: "Arial", sans-serif;
+  font-size: 1.0rem;
+  padding-left: 24px;
+}
+
+.banner2 h4 {
+  padding: 24px 0px 32px 24px;
+  font-family: "Arial", sans-serif;
+  font-size: 0.9rem;
+}
