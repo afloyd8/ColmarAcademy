@@ -5,7 +5,10 @@ body {
 
 .container {
   display: flex;
+  margin: auto;
 }
+
+/* HEADER */
 
 header {
   background-color: whitesmoke;
@@ -32,6 +35,7 @@ header img {
   display: none;
 }
 
+
 .first {
   color: hsl(217,1,34);
   font-weight: bold;
@@ -48,8 +52,29 @@ header img {
 
 nav a {
   text-decoration: none;
-  padding-right: 16px;
+  padding-right: 16px; /* NOTE: The spacing between the nav items */
+  color: black;
 }
+
+.navigation { /* NOTE: These should be the colored bars between the links */
+  background-color: hsl(175,100,50);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation, nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*padding-top: 24px;*/
+  /*padding-left: 1370px;*/
+}
+
+
+/* Banner Section */
 
 .banner {
   background-color: gray;
