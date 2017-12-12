@@ -29,7 +29,7 @@ header img {
   display: none;
 }
 
-
+/* "Colmar" text */
 .first {
   color: hsl(217,1,34);
   font-weight: bold;
@@ -37,6 +37,7 @@ header img {
   align-items: center; /* NOTE: To use "align-items" the display must be set to one of the flex options */
 }
 
+/* "Academy" text */
 .second {
   color: hsl(217,2,77);
   display: inline-flex;
@@ -49,17 +50,11 @@ nav a {
   color: black;
 }
 
-nav {
-  display: flex:
-}
-
-.container .navigation { /* NOTE: These should be the colored bars between the links */
+.navigation { /* NOTE: These should be the colored bars between the links */
   background-color: hsl(175,100,50);
   height: 100%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-end;
 }
+
 
 /*.navigation, nav ul {
   display: flex;
@@ -75,25 +70,49 @@ nav {
 .banner {
   background-color: gray;
   padding-top: 32px;
-  display: flex;
-
 }
 
 .banner .container { /* NOTE: This puts the gray bar on top of the picture, and the call to margin enables the padding on the left side of the image in the next css call */
   padding-top: 32px;
   margin: 0;
+  display: flex;
 }
 
 .banner img {
   width: 60%;
   padding: 32px 24px;
   padding-top: 32px;
-  justify-content: space-between;
+  align-self: center; /* NOTE: This line prevents the picture from stretching */
 }
 
 .learn h1 {
   width: 60%;
-  margin: 1.5rem 0rem;
-  font-size: 2rem;
+  margin-top: 15rem; /* NOTE: This moves the text up or down in the banner */
+  font-size: 2.3rem;
   font-weight: 700;
+  font-family: "Helvetica", sans-serif;
+}
+
+.learn h2 {
+  width: 60%;
+  margin-top: 1rem; /* NOTE: This moves the text up or down in the banner */
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.button {
+  background-color: black;
+  width: 60%;
+}
+
+.button h3 {
+  color: whitesmoke;
+  font-family: "Helvetica", sans-serif;
+  text-align: center;
+  padding: 8px 0px;
+  margin-top: 2rem;
+}
+
+.button a {
+  text-decoration: none;
 }
