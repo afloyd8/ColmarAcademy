@@ -3,7 +3,7 @@ body {
   font-size: 16px;
 }
 
-.container {
+header .container {
   display: flex;
   margin: auto;
 }
@@ -24,12 +24,6 @@ header img {
   padding-top: 16px;
 }
 
-/* NOTE: This will set the "COLMAR ACADEMY" text to gray
- header div:first-child {
-  color: #505256;
-  font-weight: bold;
-}
-*/
 
 .mobile {
   display: none;
@@ -39,15 +33,14 @@ header img {
 .first {
   color: hsl(217,1,34);
   font-weight: bold;
-  display: inline;
-  padding-top: 24px;
- /* NOTE: changing the padding to 24px will align this in the center */
+  display: inline-flex;
+  align-items: center; /* NOTE: To use "align-items" the display must be set to one of the flex options */
 }
 
 .second {
   color: hsl(217,2,77);
-  display: inline;
-  padding-top: 24px;
+  display: inline-flex;
+  align-items: center;
 }
 
 nav a {
@@ -56,23 +49,25 @@ nav a {
   color: black;
 }
 
-.navigation { /* NOTE: These should be the colored bars between the links */
-  background-color: hsl(175,100,50);
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+nav {
+  display: flex:
 }
 
-.navigation, nav ul {
+.container .navigation { /* NOTE: These should be the colored bars between the links */
+  background-color: hsl(175,100,50);
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/*.navigation, nav ul {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   background-color: whitesmoke;
   /*padding-top: 24px;*/
   /*padding-left: 1370px;*/
-}
+/*}
 
 
 /* Banner Section */
