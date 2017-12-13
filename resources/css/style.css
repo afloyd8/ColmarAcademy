@@ -166,7 +166,7 @@ nav a {
   display: flex;
   flex-direction: column;
   width: 40%;
-  padding: 32px 0px;
+  padding-top: 32px;
   border-left: 0.5px solid lightgray;
 }
 
@@ -176,13 +176,15 @@ nav a {
 
 .top {
   display: flex;
-  padding: 0px 16px;
+  padding-top: 0px;
+  padding-bottom: 16px;
+  padding-left: 16px;
   border-bottom: 0.5px solid lightgray;
-  height: 30%;
+  height: auto;
 }
 
 .top .image {
-  width: 35%;
+  width: 34%; /* NOTE: I'm not sure why, but the first picture needed to be set 1% smaller than the other two in order to line up right */
   height: auto;
 }
 
@@ -192,19 +194,35 @@ nav a {
 
 .middle, .bottom {
   display: flex;
-  padding: 16px;
+  padding: 8px 16px;
   border-bottom: 0.5px solid lightgray;
-  height: 30%;
   align-items: center;
+  height: 30%;
 }
 
-.middle .image {
+.middle .image, .bottom .image {
   width: 35%;
   height: auto;
 }
 
+.text {
+  width: 65%;
+}
 
-.bottom .image {
-  width: 41%;
-  height: auto;
+.text a {
+  text-decoration: none;
+}
+
+.top .text a, .middle .text a, .bottom .text a {
+  color: hsl(210, 100%, 56%); /* NOTE: This is "dodgerblue" */
+}
+
+.top .text h3, .middle .text h3, .bottom .text h3 {
+  font-weight: bold;
+}
+
+.top .text h2, .middle .text h2, .bottom .text h2 {
+  padding-left: 24px;
+  padding-top: 12px;
+  font-size: 1.3rem;
 }
