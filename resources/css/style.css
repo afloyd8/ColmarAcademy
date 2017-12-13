@@ -194,10 +194,10 @@ nav a {
 
 .middle, .bottom {
   display: flex;
-  padding: 8px 16px;
+  padding: 16px;
   border-bottom: 0.5px solid lightgray;
   align-items: center;
-  height: 30%;
+  height: auto;
 }
 
 .middle .image, .bottom .image {
@@ -207,6 +207,10 @@ nav a {
 
 .text {
   width: 65%;
+}
+
+.top .text {
+  padding-top: 24px;
 }
 
 .text a {
