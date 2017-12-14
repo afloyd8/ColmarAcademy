@@ -79,7 +79,7 @@ nav a {
 }
 
 .banner img {
-  width: 58%;
+  width: 58.5%;
   padding: 32px 24px;
   padding-top: 32px;
   align-self: center; /* NOTE: This line prevents the picture from stretching */
@@ -229,4 +229,44 @@ nav a {
   padding-left: 24px;
   padding-top: 12px;
   font-size: 1.3rem;
+  font-family: "Arial", sans-serif;
+}
+
+/* Courses Section */
+
+.courses {
+  display: flex;
+  width: 100%;
+  background-color: gray;
+  padding: 32px 72px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*.courses .title {
+  padding-bottom: 32px;
+  justify-content: center;
+}*/
+
+
+.title h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-family: "Helvetica", sans-serif;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.toprow {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottomrow {
+  display: flex;
+  flex-direction: row;
 }
