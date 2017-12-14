@@ -68,7 +68,7 @@ nav a {
 /* Banner Section */
 
 .banner {
-  background-color: gray;
+  background-color: lightgray;
   padding-top: 32px;
 }
 
@@ -111,6 +111,7 @@ nav a {
   text-align: center;
   padding: 8px 0px;
   margin-top: 2rem;
+  font-size: 1.2rem;
 }
 
 .button a {
@@ -137,27 +138,25 @@ nav a {
   width: 100%;
 }
 
-.banner2 h1 {
+.banner2 .left-column h1 {
   color: hsl(0,0,50);
   font-size: 2rem;
-  padding-left: 24px;
   padding-top: 32px;
   font-family: "Arial", sans-serif;
   font-weight: bold;
 }
 
-.banner2 h3 {
-  width: 60%;
+.banner2 .left-column h3 {
+  width: 100%;
   padding-top: 32px;
   font-family: "Raleway", sans-serif;
-  font-size: 1.0rem;
-  padding-left: 24px;
+  font-size: 1.2rem;
 }
 
-.banner2 h4 {
-  padding: 24px 0px 32px 24px;
+.banner2 .left-column h4 {
+  padding: 24px 0px 32px 0px;
   font-family: "Arial", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* Right-Column */
@@ -221,8 +220,29 @@ nav a {
   color: hsl(210, 100%, 56%); /* NOTE: This is "dodgerblue" */
 }
 
+
+.top .text h1 {
+  font-size: 2rem;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  padding-left: 24px;
+  padding-top: 48px;
+}
+
+.middle .text h1, .bottom .text h1 {
+  font-size: 2rem;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  padding-left: 24px;
+  padding-top: 12px;
+}
+
 .top .text h3, .middle .text h3, .bottom .text h3 {
   font-weight: bold;
+  padding-left: 24px;
+  padding-top: 12px;
+  font-size: 1.1rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .top .text h2, .middle .text h2, .bottom .text h2 {
@@ -236,24 +256,19 @@ nav a {
 
 .courses {
   display: flex;
-  width: 100%;
-  background-color: gray;
+  width: 92.5%;
+  background-color: lightgray;
   padding: 32px 72px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-/*.courses .title {
-  padding-bottom: 32px;
-  justify-content: center;
-}*/
-
-
 .title h1 {
   font-size: 2.3rem;
   font-weight: 700;
   font-family: "Helvetica", sans-serif;
+  padding-bottom: 32px;
 }
 
 .gallery {
@@ -269,4 +284,42 @@ nav a {
 .bottomrow {
   display: flex;
   flex-direction: row;
+}
+
+.class {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke; /* NOTE: The white box under each picture */
+  width: 33.3%;
+  margin: 16px; /* NOTE: Setting the spacing between each box */
+}
+
+.class img {
+  height: auto;
+  width: 100%;
+}
+
+.class h2 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  font-weight: bold;
+  font-size: 1.7rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+.class h3 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  font-size: 1.3rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.class h4 {
+  padding-top: 8px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  font-size: 1.3rem;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.4;
 }
