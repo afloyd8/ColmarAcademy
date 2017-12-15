@@ -404,3 +404,45 @@ nav a {
   font-family: "Arial", sans-serif;
   font-size: 1.3rem;
 }
+
+/* Footer Section */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid lightgray;
+  width: 100%;
+  padding-bottom: 36px;
+}
+
+.leftside {
+  width: 20%;
+  padding-left: 24px;
+  padding-top: 12px;
+}
+
+.leftside p {
+  color: gray;
+  font-family: "Arial", sans-serif;
+}
+
+.rightside {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 12px;
+}
+
+.rightside a {
+  text-decoration: none;
+  color: gray;
+  font-family: "Arial", sans-serif;
+}
+
+.rightside ul {
+  display: flex;
+}
+
+.rightside li {
+  padding-right: 24px;
+}
