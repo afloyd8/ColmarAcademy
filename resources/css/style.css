@@ -51,7 +51,7 @@ nav a {
 }
 
 .navigation { /* NOTE: These should be the colored bars between the links */
-  background-color: hsl(175,100,50);
+  background-color: hsl(175,100%,50%);
   height: 100%;
 }
 
@@ -264,11 +264,12 @@ nav a {
   flex-direction: column;
 }
 
-.title h1 {
+.title h1 { /* NOTE: This is also handling the stlying for the "Thesis Exhibit" heading in the thesis section */
   font-size: 2.3rem;
   font-weight: 700;
   font-family: "Helvetica", sans-serif;
   padding-bottom: 32px;
+  padding-top: 32px;
 }
 
 .gallery {
@@ -322,4 +323,84 @@ nav a {
   font-size: 1.3rem;
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.4;
+}
+
+/* Thesis section */
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  width: 98.8%;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.thesis-container {
+  display: flex;
+}
+
+.thesis-left-column {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-right: 16px;
+}
+
+.thesis-right-column {
+  display: flex;
+  flex-direction: column;
+  width: 37.5%;
+}
+
+.topblock, .bottomblock {
+  display: flex;
+  height: 33%;
+}
+
+.thesis-left-column video {
+  padding: 0px;
+  margin-top: 0px; /* NOTE: There was a gap between the top of the video and the top of the .thesis-left-column container. I'm not sure why it was there,
+                    but setting a negative margin removed it */
+}
+
+.thesis-left-column h3 {
+  width: 90%;
+  padding-top: 8px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  padding-bottom: 32px;
+}
+
+.thesis-left-column h1 {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  font-size: 2rem;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.topblock img, .bottomblock img {
+  width: 35%;
+  padding: 16px;
+}
+
+.topblock-text, .bottomblock-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 65%;
+}
+
+.topblock-text h1, .bottomblock-text h1 {
+  font-size: 2rem;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.topblock-text h2, .bottomblock-text h2 {
+  padding-top: 16px;
+  font-family: "Arial", sans-serif;
+  font-size: 1.3rem;
 }
