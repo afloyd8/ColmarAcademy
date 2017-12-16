@@ -169,6 +169,34 @@ header img {
 
 .button a {
   text-decoration: none;
+}
+
+/* Media Queries for Banner section */
+@media screen and (max-width:470px) {
+  .banner .container {
+    flex-direction: column;
+  }
+  .banner img {
+    width: 100%;
+    padding: 0px 0px 32px 0px;
+  }
+  .learn h1 {
+    width: 100%;
+    margin-top: 0rem; /* NOTE: This moves the text up or down in the banner */
+    font-size: 2.3rem;
+    padding-left: 1rem;
+  }
+  .learn h2 {
+    width: 90%;
+    margin-top: 1rem; /* NOTE: This moves the text up or down in the banner */
+    font-size: 1.3rem;
+    padding-left: 1rem;
+  }
+  .button {
+    width: 90%;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
 
 }
 
