@@ -197,7 +197,6 @@ header img {
     margin-left: 1rem;
     margin-bottom: 2rem;
   }
-
 }
 
 /****** Information Section ******/
@@ -334,7 +333,59 @@ header img {
   font-family: "Arial", sans-serif;
 }
 
-/* Courses Section */
+/* Media Queries for Information section */
+@media screen and (max-width:470px) {
+  .banner2 .left-column {
+    display: none;
+  }
+  .banner2 .right-column {
+    width: 100%;
+  }
+  .top {
+    padding-bottom: 0rem;
+  }
+  .top, .middle, .bottom {
+    flex-direction: column;
+    width: 100%;
+    border: none;
+  }
+  .right-column .image {
+    width: 90%;
+  }
+  .middle, .bottom {
+    padding-left: 1rem;
+    align-items: left;
+  }
+  .top .text h1, .midde .text h1, .bottom .text h1 {
+    padding-left: 2rem;
+    padding-top: 0rem;
+  }
+  .top .text h2, .middle .text h2, .bottom .text h2 {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    line-height: 1.2;
+  }
+  .top .text h3, .middle .text h3, .bottom .text h3 {
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+  .top .text, .middle .text, .bottom .text {
+    width: 90%;
+  }
+  .bottom .text h1 {
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+  }
+  .middle .text h1 {
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+  }
+  .middle .text h3 {
+    padding-bottom: 0rem;
+  }
+}
+
+/****** Courses Section ******/
 
 .courses {
   display: flex;
