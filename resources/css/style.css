@@ -494,8 +494,7 @@ header img {
 
 .thesis-left-column video {
   padding: 0px;
-  margin-top: 0px; /* NOTE: There was a gap between the top of the video and the top of the .thesis-left-column container. I'm not sure why it was there,
-                    but setting a negative margin removed it */
+  margin-top: 0px;
 }
 
 .thesis-left-column h3 {
@@ -538,7 +537,21 @@ header img {
   font-size: 1.3rem;
 }
 
-/* Footer Section */
+/* Media queries for Thesis section */
+
+@media screen and (max-width: 470px) {
+  .thesis-right-column {
+    display: none;
+  }
+  .thesis-left-column {
+    width: 100%;
+  }
+  .thesis-left-column h1, .thesis-left-column h3 {
+    display: none;
+  }
+}
+
+/****** Footer Section ******/
 
 footer {
   display: flex;
@@ -578,4 +591,18 @@ footer {
 
 .rightside li {
   padding-right: 24px;
+}
+
+/* Media queries for footer section */
+@media screen and (max-width: 470px){
+  .rightside {
+    display: none;
+  }
+  .leftside {
+    width: 100%;
+    padding-top: 3rem;
+  }
+  footer {
+    border: none;
+  }
 }
