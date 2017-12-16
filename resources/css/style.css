@@ -96,6 +96,15 @@ header img {
   .navigation .desktop{
     display: none;
   }
+  .mobile {
+    display: flex;
+  }
+  .header-left {
+    display: none;
+  }
+  .navigation {
+    background-color: whitesmoke;
+  }
 }
 
 
